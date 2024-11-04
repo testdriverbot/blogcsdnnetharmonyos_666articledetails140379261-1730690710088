@@ -1,0 +1,44 @@
+version: 4.0.79
+steps:
+  - prompt: Navigate to the login page.
+    commands:
+      - command: hover-text
+        text: 登录
+        description: login link in the header
+        action: click
+  - prompt: Enter valid test credentials.
+    commands:
+      - command: hover-text
+        text: 密码登录
+        description: password login option
+        action: click
+      - command: hover-text
+        text: 用户名
+        description: username field
+        action: click
+      - command: type
+        text: testuser
+      - command: hover-text
+        text: 密码
+        description: password field
+        action: click
+      - command: type
+        text: testpassword
+  - prompt: Submit the login form.
+    commands:
+      - command: hover-text
+        text: 登录
+        description: submit button for the login form
+        action: click
+  - prompt: Submit the login form.
+    commands:
+      - command: hover-text
+        text: 登录
+        description: submit button for the login form
+        action: click
+  - prompt: Submit the login form.
+    commands:
+      - command: hover-text
+        text: 登录
+        description: submit button for the login form
+        action: click
