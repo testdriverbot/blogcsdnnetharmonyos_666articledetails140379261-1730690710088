@@ -1,0 +1,27 @@
+version: 4.0.79
+steps:
+  - prompt: Interact with the main call-to-action button or link.
+    commands:
+      - command: hover-text
+        text: 去查看
+        description: call-to-action button in the advertisement
+        action: click
+  - prompt: Assert that the expected modal or page is presented.
+    commands:
+      - command: assert
+        expect: the login modal is visible
+  - prompt: >-
+      Complete any required actions and confirm successful submission or
+      navigation.  # Use the content of the file from the environment
+    commands:
+      - command: hover-text
+        text: 密码登录
+        description: password login option
+        action: click
+      - command: type
+        text: your_password_here
+      - command: press-keys
+        keys:
+          - enter
+      - command: assert
+        expect: user dashboard is visible
