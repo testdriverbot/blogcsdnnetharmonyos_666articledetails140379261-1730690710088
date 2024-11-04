@@ -1,0 +1,32 @@
+version: 4.0.79
+steps:
+  - prompt: Enter a search term in the search bar.
+    commands:
+      - command: hover-text
+        text: 搜索文章
+        description: search bar in the sidebar
+        action: click
+  - prompt: Enter a search term in the search bar.
+    commands:
+      - command: hover-text
+        text: 关闭
+        description: close button on the login prompt
+        action: click
+      - command: hover-text
+        text: 搜索文章
+        description: search bar in the sidebar
+        action: click
+      - command: type
+        text: HarmonyOS
+  - prompt: Enter a search term in the search bar.
+    commands:
+      - command: hover-text
+        text: 关闭
+        description: close button on the login prompt
+        action: click
+      - command: hover-text
+        text: 搜索
+        description: search bar in the header
+        action: click
+      - command: type
+        text: HarmonyOS
