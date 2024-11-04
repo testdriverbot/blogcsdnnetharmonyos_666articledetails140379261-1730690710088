@@ -1,0 +1,40 @@
+version: 4.0.79
+steps:
+  - prompt: Click on each footer link.
+    commands:
+      - command: scroll
+        direction: down
+  - prompt: Click on each footer link.
+    commands:
+      - command: scroll-until-text
+        text: Contact Us
+        direction: down
+      - command: hover-text
+        text: Privacy Policy
+        description: footer link
+        action: click
+      - command: hover-text
+        text: Terms of Service
+        description: footer link
+        action: click
+      - command: hover-text
+        text: About Us
+        description: footer link
+        action: click
+  - prompt: Click on each footer link.
+    commands:
+      - command: scroll-until-text
+        text: Privacy Policy
+        direction: down
+      - command: hover-text
+        text: Privacy Policy
+        description: footer link
+        action: click
+      - command: hover-text
+        text: Terms of Service
+        description: footer link
+        action: click
+      - command: hover-text
+        text: Contact Us
+        description: footer link
+        action: click
